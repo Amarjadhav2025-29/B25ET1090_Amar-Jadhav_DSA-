@@ -22,10 +22,9 @@ int main()
         printf("2. Display\n");
         printf("3. Search\n");
         printf("4. Modify\n");
-        printf("5. Append\n");
-        printf("6. Delete\n");
-        printf("7. Sort\n");
-        printf("8. Exit\n");
+        printf("5. Delete\n");
+        printf("6. Sort\n");
+        printf("7. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -126,30 +125,6 @@ int main()
                 break;
 
             case 5:
-                if (n >= MAX)
-                {
-                    printf("\nDatabase is full.\n");
-                }
-                else
-                {
-                    printf("\nEnter details of new employee\n");
-
-                    printf("Employee Number: ");
-                    scanf("%d", &emp[n].emp_no);
-
-                    printf("Name: ");
-                    scanf(" %[^\n]", emp[n].name);
-
-                    printf("Salary: ");
-                    scanf("%f", &emp[n].salary);
-
-                    n++;
-
-                    printf("\nEmployee appended successfully.\n");
-                }
-                break;
-
-            case 6:
                 printf("\nEnter employee number to delete: ");
                 scanf("%d", &key);
 
@@ -177,7 +152,7 @@ int main()
 
                 break;
 
-            case 7:
+            case 6:
                 for (i = 0; i < n - 1; i++)
                 {
                     for (j = 0; j < n - i - 1; j++)
@@ -194,7 +169,7 @@ int main()
                 printf("\nRecords sorted by Employee Number.\n");
                 break;
 
-            case 8:
+            case 7:
                 printf("\nExiting program...\n");
                 break;
 
@@ -202,7 +177,7 @@ int main()
                 printf("\nInvalid choice.\n");
         }
 
-    } while (choice != 8);
+    } while (choice != 7);
 
     return 0;
 }
