@@ -30,7 +30,7 @@ int main()
 
         switch (choice)
         {
-            case 1:
+            case 1:                                                 // CREATE 
                 printf("\nEnter number of employees: ");
                 scanf("%d", &n);
 
@@ -51,7 +51,7 @@ int main()
                 printf("\nDatabase created successfully.\n");
                 break;
 
-            case 2:
+            case 2:                                                  // DISPLAY
                 if (n == 0)
                 {
                     printf("\nDatabase is empty.\n");
@@ -71,7 +71,7 @@ int main()
                 }
                 break;
 
-            case 3:
+            case 3:                                                 // SEARCH
                 printf("\nEnter employee number to search: ");
                 scanf("%d", &key);
 
@@ -96,7 +96,7 @@ int main()
 
                 break;
 
-            case 4:
+            case 4:                                                    // MODIFY
                 printf("\nEnter employee number to modify: ");
                 scanf("%d", &key);
 
@@ -124,7 +124,7 @@ int main()
 
                 break;
 
-            case 5:
+            case 5:                                                        // DELETE
                 printf("\nEnter employee number to delete: ");
                 scanf("%d", &key);
 
@@ -152,7 +152,7 @@ int main()
 
                 break;
 
-            case 6:
+            case 6:                                                    // SORT       
                 for (i = 0; i < n - 1; i++)
                 {
                     for (j = 0; j < n - i - 1; j++)
@@ -169,7 +169,7 @@ int main()
                 printf("\nRecords sorted by Employee Number.\n");
                 break;
 
-            case 7:
+            case 7:                                                   // EXIT 
                 printf("\nExiting program...\n");
                 break;
 
